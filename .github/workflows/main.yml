@@ -133,6 +133,8 @@ jobs:
     name: Push gateway Docker image to DockerHub
     runs-on: ubuntu-latest
     steps:
+      - name: List files in working directory
+        run: ls -R
       - name: Check out the repo
         uses: actions/checkout@v3
       - name: Set up Docker Buildx
