@@ -8,7 +8,6 @@ on:
 jobs:
   tests:
     runs-on: ubuntu-latest
-    # В блоке services описываются сервисы по аналогии с docker-compose.yml
     services:
       postgres:
         image: postgres:13.10
